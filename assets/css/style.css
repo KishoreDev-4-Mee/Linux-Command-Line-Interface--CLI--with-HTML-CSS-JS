@@ -1,0 +1,260 @@
+* {
+        margin: 0;
+            font-size: x-large;
+            font-family: monospace;
+            overflow: hidden;
+    }
+
+    html,
+    body {
+        height: 100%;
+
+    }
+
+   
+.container {
+   min-height: 100%;
+        height: auto !important;
+        height: 100%;
+}
+
+.terminal_toolbar {
+     display: flex;
+    height: 55px;
+    align-items: center;
+    padding: 0 8px;
+    box-sizing: border-box;
+    /* border-top-left-radius: 5px; */
+    /* border-top-right-radius: 5px; */
+    background: #212121;
+    justify-content: space-between;
+}
+
+.butt {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-right: 5px;
+  font-size: 8px;
+  height: 12px;
+  width: 12px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 100%;
+  background: linear-gradient(#7d7871 0%, #595953 100%);
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 1px 0px #41403A, 0px 1px 1px 0px #474642;
+}
+
+.btn-color {
+  background: red;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.butt--exit {
+  background: linear-gradient(#f37458 0%, #de4c12 100%);
+}
+
+.add_tab {
+      border: 1px solid #fff;
+    color: #fff;
+    padding: 1px 7px;
+    border-radius: 4px;
+    /* border-bottom: none; */
+    cursor: pointer;
+    background: white;
+}
+
+.btn-green{
+    background: #049604;
+}
+.btn-yellow{
+    background: yellow;
+}
+
+.user {
+  color: #d5d0ce;
+  margin-left: 6px;
+  font-size: 14px;
+  line-height: 15px;
+}
+
+.customepre::-webkit-scrollbar {
+ width: 3px;
+ height: 8px;
+}
+.customepre::-webkit-scrollbar-track {
+ background: #f1f1f1;
+  border-radius: 5px;
+}
+.customepre::-webkit-scrollbar-thumb{
+ background: #f9cb47;
+  border-radius: 5px;
+}
+
+.card {
+  font-family: monospace;
+  /* margin-top: 40px; */
+  width: 100%;
+  /* min-height: 260px; */
+  background: #292828da;
+  border: 2px solid #000;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.card:last-child{
+  margin-bottom: 20rem !important;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7px;
+}
+
+.dots {
+  display: flex;
+  justify-content: last baseline;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.dot-1 {
+  background-color:red;
+}
+
+.dot-2 {
+  background-color: yellow;
+}
+
+.dot-3 {
+  background-color: #049604;
+}
+
+.top p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.dot , .top p {
+  margin: 5px;
+}
+
+.g-color {
+  color: darkgreen;
+}
+
+.bottom {
+     margin-top: 15px;
+    padding: 0 25px;
+    margin-bottom: 25px;
+}
+
+
+span.function{
+    color: #b300b6;
+}
+.terminal_body {
+      background: radial-gradient(circle at 50% -50%, rgba(107, 107, 107, 0.08) 0px, rgba(107, 107, 107, 0.08) 33.333%, rgba(72, 72, 72, 0.08) 33.333%, rgba(72, 72, 72, 0.08) 66.666%, rgba(36, 36, 36, 0.08) 66.666%, rgba(36, 36, 36, 0.08) 99.999%), radial-gradient(circle at 0% 0%, rgba(184, 184, 184, 0.08) 0px, rgba(184, 184, 184, 0.08) 33.333%, rgba(96, 96, 96, 0.08) 33.333%, rgba(96, 96, 96, 0.08) 66.666%, rgba(7, 7, 7, 0.08) 66.666%, rgba(7, 7, 7, 0.08) 99.999%), linear-gradient(281deg, #212121, #040404);
+    height: 100%;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.terminal_promt {
+  display: flex;
+}
+
+.terminal_promt:last-child{
+        margin-bottom: 25rem !important;
+}
+
+.terminal_body::-webkit-scrollbar {
+ width: 7px;
+}
+.terminal_body::-webkit-scrollbar-track {
+ background: #f1f1f1;
+  border-radius: 5px;
+}
+.terminal_body::-webkit-scrollbar-thumb{
+ background: #050505;
+  border-radius: 5px;
+}
+
+.terminal_promt span {
+  margin-left: 4px;
+}
+
+.terminal_user {
+  color: #1eff8e;
+}
+
+.terminal_location {
+  color: #4878c0;
+}
+
+.terminal_bling {
+  color: #dddddd;
+}
+
+.terminal_cursor {
+      display: block;
+    height: 23px;
+    width: 2px;
+    margin-left: 10px;
+    animation: curbl 1200ms linear infinite;
+}
+
+@keyframes curbl {
+
+  0% {
+    background: #ffffff;
+  }
+
+  49% {
+    background: #ffffff;
+  }
+
+  60% {
+    background: transparent;
+  }
+
+  99% {
+    background: transparent;
+  }
+
+  100% {
+    background: #ffffff;
+  }
+}
+
+
+.terminal_input{
+          background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    caret-color: #ffffff;
+    padding: 0 5px;
+    width: 100%;
+}
+
